@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { Card, Fab, Filter } from '../../components';
+import { useParams } from 'react-router-dom';
+import { Card, Fab } from '../../components';
 import './index.css'
 
 const Category = () => {
   const params = useParams()
   const id = params.id
-  const navigate = useNavigate()
   const [posts, setPosts] = useState([])
   const [load, setLoad] = useState(false)
   const [page, setPage] = useState(1)
