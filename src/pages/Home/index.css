@@ -1,0 +1,31 @@
+.header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.header h1 {
+    font-size: var(--h1-size);
+}
+
+.load_more {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.load_more .load_button {
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+   
+}

@@ -1,0 +1,44 @@
+.profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 2rem 0;
+}
+
+.information {
+    text-align: center;
+}
+
+.information img {
+    border: 4px solid var(--primary-color);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.information .name {
+    font-size: var(--body-size);
+    font-weight: bold;
+}
+
+.information .bio {
+    font-size: var(--body-size);
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .information img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .information {
+        padding: 4rem 0;
+    }
+}

@@ -1,0 +1,30 @@
+.member_search {
+    outline: none;
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    width: 50%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    font-size: var(--action-size);
+    margin-top: 1rem;
+}
+
+.list_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 20px;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .member_search {
+        width: 100%;
+    }
+
+    .list_group {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+}

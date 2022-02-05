@@ -1,0 +1,79 @@
+.edit_profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 2rem 0;
+}
+
+.edit_profile img {
+    border: 4px solid var(--primary-color);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 5px;
+    display: block;
+}
+
+.edit_profile .input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.edit_profile .input p {
+    margin-bottom: 10px;
+}
+
+.edit_profile .input input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;
+}
+
+.edit_profile .input textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;
+    resize: none;
+    height: 100px;
+}
+
+.edit_profile button {
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    font-size: var(--h2-size);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.edit_profile .input .error {
+    color: #ff3243;
+    font-size: 13px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .edit_profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .edit_profile img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+}

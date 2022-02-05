@@ -1,0 +1,78 @@
+.card {
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #F7F7F7;
+    box-shadow: 4px 13px 28px -4px rgba(125, 125, 125, 0.12);
+}
+
+.card .card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card_action {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.card .card_action button {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+.card .card_action button i {
+    font-size: 15px;
+}
+
+.card .card_header .card_date {
+    font-size: var(--body-size);
+}
+
+.card .card_main {
+    padding: 20px 0 15px 0;
+    box-sizing: border-box;
+}
+
+.card .card_main a {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-size: var(--action-size);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.card .card_main h2 {
+    margin-bottom: 10px;
+    font-size: var(--h2-size);
+}
+
+.card .card_main p {
+    font-size: var(--body-size);
+}
+
+.card .card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card_footer .card_comment {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: var(--body-size);
+    color: var(--secondary-color);
+}
+
+.card .card_footer .card_link a {
+    font-size: var(--body-size);
+    color: var(--primary-color);
+}

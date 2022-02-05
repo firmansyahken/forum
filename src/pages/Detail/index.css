@@ -1,0 +1,91 @@
+.post {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.post .post_header {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+.post .post_header .post_profile {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: var(--body-size);
+    font-weight: bold;
+}
+
+.post .post_header .post_profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.post .post_header .post_date {
+    font-size: var(--body-size);
+}
+
+.post .post_main {
+    padding: 2rem 0;
+}
+
+.post .post_main h2 {
+    margin-bottom: 10px;
+    font-size: var(--h2-size);
+}
+
+.post .post_main p {
+    font-size: var(--body-size);
+}
+
+.post form {
+    width: 100%;
+}
+
+.input_answer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+
+.input_answer textarea {
+    width: 100%;
+    padding: 1px 0;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #EAEAEA;
+    font-size: var(--body-size);
+}
+
+.input_answer button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+}
+
+.input_answer button i {
+    color: white;
+    font-size: 18px;
+}
+
+.answers {
+    padding: 2rem 0;
+}
+
+.answers h2 {
+    font-size: var(--h2-size);
+    margin-bottom: 40px;
+}
+
+.answers .answers_main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+}

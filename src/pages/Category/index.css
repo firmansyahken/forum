@@ -1,0 +1,18 @@
+.header {
+    padding: 2rem 20px;
+}
+
+.load_more {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.load_more .load_button {
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
