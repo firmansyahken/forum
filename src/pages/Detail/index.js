@@ -29,7 +29,7 @@ function Detail() {
                 setPost(dataPost)
                 setAnswers(dataAnswer)
         })
-    }, [answers])
+    }, [answer])
 
     const handleSubmit = e => {
         e.preventDefault()
