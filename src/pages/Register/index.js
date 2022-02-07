@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './index.css'
 
 const Register = () => {
+    const navigate = useNavigate()
     const [register, setRegister] = useState({
         name: '',
         email: '',
@@ -33,6 +34,7 @@ const Register = () => {
             if(message === 'Registration Success') {
                 localStorage.setItem('profile', JSON.stringify(data))
                 localStorage.setItem('auth_token', token)
+                navigate('/')
             } else {
                 setErrors(data)
             }
